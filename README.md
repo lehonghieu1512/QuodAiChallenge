@@ -2,9 +2,11 @@
 
 ## Setup
 
-Intellij
+Use IntelliJ to run the project
 
-cannot use cmd line as it relates to a lot of dependencies
+You may want to import the **simple-json** library
+
+Run the java file: src/main/java/main.java
 
 The order of input args:
 \<start-time> \<end-time> \<input-json-file> \<output-csv-file>
