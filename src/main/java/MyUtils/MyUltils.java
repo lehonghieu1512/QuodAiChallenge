@@ -1,8 +1,6 @@
 package MyUtils;
-
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-
 import java.util.*;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -20,9 +18,6 @@ public class MyUltils {
     public static ArrayList<JSONObject> json_read(String filepath) throws FileNotFoundException, IOException, org.json.simple.parser.ParseException, ClassCastException {
         ArrayList<JSONObject> json = new ArrayList<JSONObject>();
         JSONObject obj;
-        // The name of the file to open.
-
-        // This will reference one line at a time
         String line = null;
         FileReader fileReader = new FileReader(filepath);
 

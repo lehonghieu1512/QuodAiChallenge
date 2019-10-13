@@ -1,9 +1,6 @@
 package Metrics;
-
 import MyUtils.MyUltils;
 import org.json.simple.JSONObject;
-
-import java.lang.reflect.Array;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -120,7 +117,6 @@ public class Metrics {
             value.add(raw_metric);
             metric.put(ele.getKey(), value);
         }
-
         return metric;
     }
 
@@ -169,7 +165,6 @@ public class Metrics {
                     durations.add(duration);
                     map.put(repo_id, durations);
                 }
-
             }
         }
 
@@ -192,7 +187,6 @@ public class Metrics {
         return result;
     }
 
-    //
     public static Map<String, ArrayList<Double>> ratio_commit_per_dev(ArrayList<JSONObject> events) throws ParseException {
         /*
             This function calculates the ratio commit per dev for each project
@@ -293,7 +287,6 @@ public class Metrics {
         return result;
     }
 
-
     public static Map<String, ArrayList<Double>> num_contributor_per_project(ArrayList<JSONObject> events) {
         /*
             This function calculates the number of contributor for each project
@@ -321,7 +314,6 @@ public class Metrics {
                 contributors.add(contributor_id);
                 map.put(repo_id, contributors);
             }
-//            }
         }
 
         Map<String, ArrayList<Double>> result = new HashMap<String, ArrayList<Double>>();
@@ -343,5 +335,4 @@ public class Metrics {
         }
         return result;
     }
-
 }
